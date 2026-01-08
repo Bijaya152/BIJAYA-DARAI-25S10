@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Defender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="header">
+            <h1>Space Defender</h1>
+            <div class="controls">
+                Speed: 
+                <select id="speedSelect">
+                    <option value="1">Slow</option>
+                    <option value="2" selected>Normal</option>
+                    <option value="4">Fast</option>
+                </select>
+                <button id="startBtn">START MISSION</button>
+            </div>
+            <div class="stats">
+                Lives: <span id="lifeDisp">10</span> | Score: <span id="scoreDisp">0</span>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="500"></canvas>
+
+        <div class="instructions">
+            <strong>Controls:</strong> Arrow Keys (← →) to Move | <b>SPACE</b> to Shoot<br>
+            Don't let asteroids hit your ship!
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
